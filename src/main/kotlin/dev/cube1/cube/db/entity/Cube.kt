@@ -11,6 +11,7 @@ class Cube(id: EntityID<Int>): IntEntity(id) {
 
     var name by Cubes.name
     var owner by CubePlayer referencedOn Cubes.owner
+    var containerId by Cubes.containerId
     var coop by CubePlayer via Coops
 
     var isPublic by Cubes.isPublic

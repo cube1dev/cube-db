@@ -5,6 +5,7 @@ import org.jetbrains.exposed.sql.Database
 
 object Cubes: IntIdTable() {
     val name = varchar("name", 50)
+    val containerId = varchar("container_id", 50)
     val owner = reference("owner", CubePlayers)
 
     val isPublic = integer("is_public")
