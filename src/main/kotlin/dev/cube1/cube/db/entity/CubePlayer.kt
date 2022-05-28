@@ -12,4 +12,5 @@ class CubePlayer(id: EntityID<UUID>): UUIDEntity(id) {
 
     var name by CubePlayers.name
     var starred by Cube via StarredCubes
+    var apiKey by CubePlayers.apiKey
 }
