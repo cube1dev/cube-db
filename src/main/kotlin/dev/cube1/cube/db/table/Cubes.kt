@@ -7,6 +7,7 @@ object Cubes: IntIdTable() {
     val name = varchar("name", 50)
     val containerId = varchar("container_id", 50)
     val owner = reference("owner", CubePlayers)
+    val category = varchar("category", 50)
 
     val isPublic = integer("is_public")
 }
